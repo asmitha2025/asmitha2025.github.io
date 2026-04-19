@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Asmitha M // AI Research Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#35343a",
+                      "surface-container-highest": "#35343a",
+                      "inverse-on-surface": "#303036",
+                      "surface-container-lowest": "#0e0e13",
+                      "on-secondary-fixed": "#001a42",
+                      "outline-variant": "#424754",
+                      "on-secondary-container": "#9fb5e7",
+                      "tertiary-container": "#df7412",
+                      "primary-fixed-dim": "#adc6ff",
+                      "on-tertiary-fixed-variant": "#723600",
+                      "tertiary-fixed-dim": "#ffb786",
+                      "background": "#131318",
+                      "error-container": "#93000a",
+                      "tertiary-fixed": "#ffdcc6",
+                      "on-primary-fixed-variant": "#004395",
+                      "on-primary-fixed": "#001a42",
+                      "outline": "#8c909f",
+                      "on-primary": "#002e6a",
+                      "on-tertiary-fixed": "#311400",
+                      "on-primary-container": "#00285d",
+                      "primary-container": "#4d8eff",
+                      "surface-container-high": "#2a292f",
+                      "on-error-container": "#ffdad6",
+                      "surface-bright": "#39383e",
+                      "on-tertiary": "#502400",
+                      "on-background": "#e4e1e9",
+                      "primary": "#adc6ff",
+                      "secondary-fixed-dim": "#b1c6f9",
+                      "primary-fixed": "#d8e2ff",
+                      "inverse-primary": "#005ac2",
+                      "secondary-fixed": "#d8e2ff",
+                      "surface-dim": "#131318",
+                      "surface-container": "#1f1f25",
+                      "surface-container-low": "#1b1b20",
+                      "on-secondary-fixed-variant": "#304671",
+                      "tertiary": "#ffb786",
+                      "inverse-surface": "#e4e1e9",
+                      "on-surface": "#e4e1e9",
+                      "on-surface-variant": "#c2c6d6",
+                      "secondary": "#b1c6f9",
+                      "error": "#ffb4ab",
+                      "on-secondary": "#182f59",
+                      "secondary-container": "#304671",
+                      "on-error": "#690005",
+                      "surface": "#131318",
+                      "surface-tint": "#adc6ff",
+                      "on-tertiary-container": "#461f00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Inter"],
+                      "body": ["Inter"],
+                      "label": ["Space Grotesk"],
+                      "mono": ["JetBrains Mono"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body { background-color: #131318; scroll-behavior: smooth; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-4 bg-[#131318]/80 backdrop-blur-xl border-b border-white/10">
+<div class="font-mono font-bold text-lg tracking-tighter text-white">AI_RESEARCH_ARCHIVE</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-['Inter'] font-medium text-sm tracking-tight text-[#adc6ff] border-b border-[#adc6ff] pb-1" href="#home">Home</a>
+<a class="font-['Inter'] font-medium text-sm tracking-tight text-neutral-400 hover:text-white transition-colors" href="#projects">Projects</a>
+<a class="font-['Inter'] font-medium text-sm tracking-tight text-neutral-400 hover:text-white transition-colors" href="#hackathons">Hackathons</a>
+<a class="font-['Inter'] font-medium text-sm tracking-tight text-neutral-400 hover:text-white transition-colors" href="#skills">Skills</a>
+<a class="font-['Inter'] font-medium text-sm tracking-tight text-neutral-400 hover:text-white transition-colors" href="#contact">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-5 py-2 text-xs font-label font-bold uppercase tracking-widest rounded-sm hover:opacity-90 active:scale-95 transition-all">Hire me</button>
+</header>
+<main class="pt-24 space-y-32">
+<!-- HERO SECTION -->
+<section class="px-12 grid grid-cols-12 gap-8 items-start" id="home">
+<div class="col-span-12 lg:col-span-8 space-y-8">
+<div class="inline-flex items-center gap-3 px-3 py-1 bg-surface-container-highest border border-outline-variant/20 rounded-sm">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold">Meta PyTorch OpenEnv 2026 — Finalist</span>
+</div>
+<div class="space-y-4">
+<h1 class="text-7xl font-extrabold tracking-tighter text-white leading-[0.9]">
+                        Asmitha M
+                    </h1>
+<p class="text-xl text-on-surface-variant font-light max-w-2xl leading-relaxed">
+                        AI Research Engineer | Full-Stack Developer | Agentic Systems. Architecting the next generation of autonomous intelligence and high-latency medical signal processing.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="bg-surface-container-low p-4 min-w-[140px]">
+<div class="font-label text-[10px] text-neutral-500 uppercase mb-1">Deployment</div>
+<div class="font-mono text-2xl text-primary font-bold">4 AI Systems</div>
+</div>
+<div class="bg-surface-container-low p-4 min-w-[140px]">
+<div class="font-label text-[10px] text-neutral-500 uppercase mb-1">Competition</div>
+<div class="font-mono text-2xl text-primary font-bold">5 Hackathons</div>
+</div>
+<div class="bg-surface-container-low p-4 min-w-[140px]">
+<div class="font-label text-[10px] text-neutral-500 uppercase mb-1">Optimization</div>
+<div class="font-mono text-2xl text-primary font-bold">63.9% Latency Cut</div>
+</div>
+<div class="bg-surface-container-low p-4 min-w-[140px]">
+<div class="font-label text-[10px] text-neutral-500 uppercase mb-1">Reliability</div>
+<div class="font-mono text-2xl text-primary font-bold">73% P1 Resolution</div>
+</div>
+</div>
+<div class="flex gap-6 items-center pt-8">
+<a class="group flex items-center gap-2 bg-primary text-on-primary px-8 py-4 font-label font-bold uppercase tracking-widest text-sm rounded-sm" href="#projects">
+                        view projects
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+<button class="text-white font-label font-bold uppercase tracking-widest text-sm underline underline-offset-8 hover:text-primary transition-colors">
+                        download resume
+                    </button>
+</div>
+</div>
+<div class="hidden lg:block col-span-4 sticky top-32">
+<div class="border-l-2 border-primary bg-surface-container-low/50 p-8 backdrop-blur-md">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined text-sm">info</span>
+<span class="font-mono text-[10px] uppercase tracking-widest font-bold">Design Note #01</span>
+</div>
+<p class="font-body text-sm text-neutral-400 leading-relaxed italic">
+                        "The interface employs architectural monograph principles. Using obsidian foundations to allow data metrics to 'vibrate' against the deep background. Information density is prioritized over standard padding to simulate a technical ledger."
+                    </p>
+<div class="mt-6 font-mono text-[10px] text-neutral-600 uppercase tracking-tighter">
+                        REF_ID: MD_772_EDITORIAL
+                    </div>
+</div>
+</div>
+</section>
+<!-- PROJECTS SECTION -->
+<section class="px-12 space-y-12" id="projects">
+<div class="flex items-end justify-between border-b border-outline-variant/20 pb-4">
+<h2 class="text-4xl font-extrabold tracking-tighter text-white uppercase">Featured Projects</h2>
+<span class="font-mono text-xs text-neutral-500">ROOT/RESEARCH/PROJECTS [4]</span>
+</div>
+<!-- Project 1: Featured -->
+<div class="bg-surface-container-low overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="h-96 lg:h-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="abstract visualization of biological neural networks and data streams in glowing blue and deep purple hues on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi9R2ltyZy_6K0VJiZh_3NCzey2UerYI6TuuD7xt9j1-950B1Sao6FBlPr4YFWKHk2HrUczcUUizepJwwgsvA5ETDICyQuSHieT8S8j112nml6Txv5Mz5NuIIjhVI2XqCUTIxWyTBuaWxzY66nRFPJOMdHksuzLIomMxf40Jb0Pwb8lRqmqno2wxRPJeyj7BTxbyqB_mgvot0a0jf77GME28vACSU2j1f9GD0k3-q8W1x0R5N94B5xzhl5z9iHNCvZGm7bdXpD0DFh"/>
+</div>
+<div class="p-12 flex flex-col justify-between space-y-8">
+<div>
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-primary/10 text-primary border border-primary/20 px-2 py-1 font-mono text-[10px] font-bold uppercase">FLAGSHIP</span>
+<span class="font-mono text-[10px] text-neutral-500 uppercase tracking-widest">SYSTEM: CHRONO_AGENT</span>
+</div>
+<h3 class="text-5xl font-extrabold text-white mb-6">CHRONO</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-8">
+                                Agentic Longitudinal Blood Intelligence system. Developed for complex medical data synthesis, utilizing multi-modal LLMs to predict chronic disease trajectories through high-fidelity signal analysis.
+                            </p>
+<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="border border-outline-variant/10 p-4">
+<div class="text-primary font-mono text-xl font-bold">98.4%</div>
+<div class="font-label text-[9px] uppercase text-neutral-500 tracking-widest mt-1">Trident Accuracy</div>
+</div>
+<div class="border border-outline-variant/10 p-4">
+<div class="text-primary font-mono text-xl font-bold">12ms</div>
+<div class="font-label text-[9px] uppercase text-neutral-500 tracking-widest mt-1">Inference Lag</div>
+</div>
+<div class="border border-outline-variant/10 p-4">
+<div class="text-primary font-mono text-xl font-bold">2.4M</div>
+<div class="font-label text-[9px] uppercase text-neutral-500 tracking-widest mt-1">Data Points</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container px-3 py-1 font-mono text-[11px] text-neutral-300">PyTorch</span>
+<span class="bg-surface-container px-3 py-1 font-mono text-[11px] text-neutral-300">FastAPI</span>
+<span class="bg-surface-container px-3 py-1 font-mono text-[11px] text-neutral-300">Redis-Graph</span>
+<span class="bg-surface-container px-3 py-1 font-mono text-[11px] text-neutral-300">Cuda_v12</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2 & More -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- IncidentMind -->
+<div class="lg:col-span-2 bg-surface-container-low p-8 border-l-4 border-tertiary">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="text-3xl font-bold text-white mb-2">IncidentMind</h3>
+<p class="text-on-surface-variant font-medium">Autonomous Incident Resolution Engine</p>
+</div>
+<span class="material-symbols-outlined text-tertiary">auto_fix</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-8">
+                        Building a reinforcement learning environment to simulate SRE scenarios. The agent autonomously handles P1 incident triaging, reducing resolution time across 40+ simulated infrastructure failure modes.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container p-4">
+<div class="font-mono text-xl text-tertiary">73.2%</div>
+<div class="font-label text-[9px] uppercase text-neutral-500">Benchmark Score</div>
+</div>
+<div class="bg-surface-container p-4">
+<div class="font-mono text-xl text-tertiary">5.2x</div>
+<div class="font-label text-[9px] uppercase text-neutral-500">Resolution Speedup</div>
+</div>
+</div>
+</div>
+<!-- OPTI-FAB -->
+<div class="bg-surface-container p-8 space-y-6">
+<div class="font-mono text-[10px] text-primary uppercase font-bold">CASE_STUDY_04</div>
+<h3 class="text-2xl font-bold text-white">OPTI-FAB</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                        Digital twin optimization for manufacturing floors. Real-time pathfinding for robotic arms using A* heuristics on distributed nodes.
+                    </p>
+<div class="pt-4 border-t border-white/5 flex justify-between items-center">
+<span class="font-mono text-[10px] text-neutral-500">STK: C++, ROS, MQTT</span>
+<span class="material-symbols-outlined text-primary text-sm">open_in_new</span>
+</div>
+</div>
+<!-- Crop Yield -->
+<div class="bg-surface-container p-8 space-y-6">
+<div class="font-mono text-[10px] text-primary uppercase font-bold">CASE_STUDY_05</div>
+<h3 class="text-2xl font-bold text-white">CROP_YIELD</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                        Satellite imagery analysis using Swin Transformers to predict agricultural yields with 89% accuracy across the Indo-Gangetic plain.
+                    </p>
+<div class="pt-4 border-t border-white/5 flex justify-between items-center">
+<span class="font-mono text-[10px] text-neutral-500">STK: CV2, TF, Sat-API</span>
+<span class="material-symbols-outlined text-primary text-sm">open_in_new</span>
+</div>
+</div>
+<div class="lg:col-span-1 bg-surface-container p-8 flex flex-col justify-center items-center text-center space-y-4 border border-dashed border-outline-variant/30">
+<div class="w-12 h-12 rounded-full border border-outline-variant/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-neutral-500">add</span>
+</div>
+<div>
+<div class="font-bold text-white uppercase tracking-widest text-xs">View Archive</div>
+<div class="font-mono text-[9px] text-neutral-500 mt-1">+12 Secondary Projects</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HACK_TIMELINE -->
+<section class="px-12 py-12 bg-surface-container-lowest/50" id="hackathons">
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 lg:col-span-3">
+<h2 class="text-4xl font-extrabold tracking-tighter text-white uppercase mb-4 leading-tight">Hack<br/>Timeline</h2>
+<p class="text-neutral-500 font-mono text-xs uppercase tracking-widest leading-loose">
+                        // Chronology of competitive<br/>intelligence testing.
+                    </p>
+</div>
+<div class="col-span-12 lg:col-span-9">
+<div class="space-y-0 relative">
+<div class="absolute left-0 top-0 bottom-0 w-px bg-white/5 ml-[4px]"></div>
+<!-- Event 1 -->
+<div class="relative pl-8 pb-12">
+<div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-primary ring-4 ring-primary/20"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-mono text-[10px] text-primary uppercase font-bold tracking-widest">MAR 2026</span>
+<h4 class="text-2xl font-bold text-white uppercase">Meta PyTorch OpenEnv</h4>
+</div>
+<div class="bg-surface-container px-3 py-1 border-l-2 border-primary">
+<span class="font-mono text-xs text-white">GLOBAL FINALIST — TOP 5</span>
+</div>
+</div>
+<p class="mt-4 text-on-surface-variant max-w-2xl text-sm italic">"Optimization of transformer weights for low-power edge devices."</p>
+</div>
+<!-- Event 2 -->
+<div class="relative pl-8 pb-12">
+<div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-neutral-600"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-mono text-[10px] text-neutral-500 uppercase font-bold tracking-widest">NOV 2025</span>
+<h4 class="text-2xl font-bold text-white uppercase">Google AI Solutions</h4>
+</div>
+<div class="bg-surface-container px-3 py-1 border-l-2 border-neutral-600">
+<span class="font-mono text-xs text-white">REGIONAL WINNER</span>
+</div>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="relative pl-8 pb-12">
+<div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-neutral-600"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-mono text-[10px] text-neutral-500 uppercase font-bold tracking-widest">AUG 2025</span>
+<h4 class="text-2xl font-bold text-white uppercase">Microsoft Imagine Cup</h4>
+</div>
+<div class="bg-surface-container px-3 py-1 border-l-2 border-neutral-600">
+<span class="font-mono text-xs text-white">NATIONAL FINALIST</span>
+</div>
+</div>
+</div>
+<!-- Event 4 -->
+<div class="relative pl-8">
+<div class="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-neutral-600"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-mono text-[10px] text-neutral-500 uppercase font-bold tracking-widest">2024 EARLIER</span>
+<h4 class="text-2xl font-bold text-white uppercase">UIDAI &amp; IESA INNOVATION</h4>
+</div>
+<div class="bg-surface-container px-3 py-1 border-l-2 border-neutral-600">
+<span class="font-mono text-xs text-white">TECH MERIT AWARD</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TECHNICAL_SKILLS -->
+<section class="px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="skills">
+<div class="bg-surface-container-low p-8 space-y-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">psychology</span>
+<h3 class="font-label font-bold uppercase tracking-widest text-sm">AI &amp; ML</h3>
+</div>
+<ul class="space-y-3 font-mono text-xs text-on-surface-variant">
+<li class="flex justify-between"><span>PyTorch / JAX</span> <span class="text-primary opacity-50">9.5</span></li>
+<li class="flex justify-between"><span>Transformers</span> <span class="text-primary opacity-50">9.0</span></li>
+<li class="flex justify-between"><span>RL Environments</span> <span class="text-primary opacity-50">8.5</span></li>
+<li class="flex justify-between"><span>Diffusers</span> <span class="text-primary opacity-50">8.0</span></li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 space-y-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">database</span>
+<h3 class="font-label font-bold uppercase tracking-widest text-sm">DATA</h3>
+</div>
+<ul class="space-y-3 font-mono text-xs text-on-surface-variant">
+<li class="flex justify-between"><span>Vector DBs</span> <span class="text-primary opacity-50">9.0</span></li>
+<li class="flex justify-between"><span>Spark / Flink</span> <span class="text-primary opacity-50">8.2</span></li>
+<li class="flex justify-between"><span>PostgreSQL</span> <span class="text-primary opacity-50">9.5</span></li>
+<li class="flex justify-between"><span>Time-Series Ops</span> <span class="text-primary opacity-50">9.0</span></li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 space-y-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">dns</span>
+<h3 class="font-label font-bold uppercase tracking-widest text-sm">INFRA</h3>
+</div>
+<ul class="space-y-3 font-mono text-xs text-on-surface-variant">
+<li class="flex justify-between"><span>Kubernetes</span> <span class="text-primary opacity-50">8.8</span></li>
+<li class="flex justify-between"><span>CUDA C++</span> <span class="text-primary opacity-50">7.5</span></li>
+<li class="flex justify-between"><span>AWS / GCP</span> <span class="text-primary opacity-50">9.0</span></li>
+<li class="flex justify-between"><span>Terraform</span> <span class="text-primary opacity-50">8.5</span></li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 space-y-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">terminal</span>
+<h3 class="font-label font-bold uppercase tracking-widest text-sm">INTERFACE</h3>
+</div>
+<ul class="space-y-3 font-mono text-xs text-on-surface-variant">
+<li class="flex justify-between"><span>React / NextJS</span> <span class="text-primary opacity-50">9.5</span></li>
+<li class="flex justify-between"><span>TypeScript</span> <span class="text-primary opacity-50">9.8</span></li>
+<li class="flex justify-between"><span>TailwindCSS</span> <span class="text-primary opacity-50">10.0</span></li>
+<li class="flex justify-between"><span>ThreeJS</span> <span class="text-primary opacity-50">7.8</span></li>
+</ul>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="px-12 pb-24" id="contact">
+<div class="bg-black border border-white/5 p-1 font-mono">
+<div class="bg-surface-container p-4 border-b border-white/5 flex items-center justify-between">
+<div class="flex gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-error-container/50"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-container/50"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container/50"></div>
+</div>
+<div class="text-[10px] text-neutral-500">zsh — 120x40</div>
+</div>
+<div class="p-8 text-sm space-y-4">
+<div class="flex gap-4">
+<span class="text-primary">➜</span>
+<span class="text-white">asmitha-m --status</span>
+</div>
+<div class="text-neutral-400 pl-8">
+                        [ STATUS: AVAILABLE_FOR_HIRE ]<br/>
+                        [ CURRENT_LOCATION: 12.9716° N, 77.5946° E ]<br/>
+                        [ INTERESTS: Agentic LLMs, Medical Signal AI, Low-latency Ops ]
+                    </div>
+<div class="flex gap-4">
+<span class="text-primary">➜</span>
+<span class="text-white">asmitha-m --contact</span>
+</div>
+<div class="pl-8 flex gap-8">
+<a class="text-primary hover:underline underline-offset-4" href="#">linkedin.com/in/asmitha-m</a>
+<a class="text-primary hover:underline underline-offset-4" href="#">github.com/asmitham</a>
+<a class="text-primary hover:underline underline-offset-4" href="mailto:archive@asmitham.tech">archive@asmitham.tech</a>
+</div>
+<div class="flex gap-4 animate-pulse">
+<span class="text-primary">➜</span>
+<span class="w-2 h-5 bg-primary"></span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 bg-[#131318] border-t border-neutral-900/50">
+<div class="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">© 2024 // 40.7128° N, 74.0060° W // ALL RIGHTS RESERVED</div>
+<div class="flex gap-12">
+<a class="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-600 hover:text-white transition-colors hover:underline hover:underline-offset-4" href="#">github</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-600 hover:text-white transition-colors hover:underline hover:underline-offset-4" href="#">contact_page</a>
+<a class="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-600 hover:text-white transition-colors hover:underline hover:underline-offset-4" href="#">mail</a>
+</div>
+</footer>
+</body></html>
