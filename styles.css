@@ -127,7 +127,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 
 /* ── Hero ── */
-.hero { padding-top: 7rem; padding-bottom: 4rem; }
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  background: radial-gradient(circle at 80% 20%, rgba(173, 198, 255, 0.08) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(77, 142, 255, 0.05) 0%, transparent 50%);
+  position: relative;
+}
 .hero-grid { display: grid; grid-template-columns: 1fr 380px; gap: 3rem; align-items: start; }
 @media (max-width: 1024px) { .hero-grid { grid-template-columns: 1fr; } .hero-aside { display: none; } }
 
@@ -176,17 +182,95 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 .btn-secondary:hover { color: var(--primary); }
 
-/* Design Note aside */
+/* Design Note Component */
 .design-note {
   border-left: 2px solid var(--primary);
   background: rgba(27, 27, 32, 0.6);
-  padding: 2rem; backdrop-filter: blur(12px);
-  position: sticky; top: 8rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(12px);
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
-.design-note-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; color: var(--primary); }
-.design-note-header span { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; }
-.design-note p { font-size: 0.875rem; color: var(--neutral-400); line-height: 1.7; font-style: italic; }
-.design-note .ref { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--neutral-600); text-transform: uppercase; letter-spacing: -0.02em; margin-top: 1.5rem; }
+.design-note-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+}
+.design-note-header span {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+.design-note p {
+  font-size: 0.85rem;
+  color: var(--neutral-400);
+  line-height: 1.7;
+  font-style: italic;
+}
+.design-note .ref {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--neutral-600);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+/* ── About Me ── */
+.about { padding: 5rem 0; }
+.about-content {
+  max-width: 720px;
+  margin-top: 2rem;
+}
+.about-content p {
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+.about-content p:last-child { margin-bottom: 0; }
+
+/* ── Achievements ── */
+.achievements { padding: 5rem 0; }
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) { .achievements-grid { grid-template-columns: 1fr; } }
+.achievement-card {
+  background: var(--surface-low);
+  padding: 2rem;
+  text-align: center;
+  transition: background 0.3s, transform 0.3s;
+}
+.achievement-card:hover {
+  background: var(--surface-container);
+  transform: translateY(-4px);
+}
+.achievement-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.achievement-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+.achievement-card p {
+  font-size: 0.82rem;
+  color: var(--on-surface-variant);
+  line-height: 1.7;
+}
 
 /* ── Projects ── */
 .projects { padding: 4rem 0; }
