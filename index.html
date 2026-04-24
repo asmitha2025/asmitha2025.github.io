@@ -263,6 +263,81 @@
 <section class="skills container" id="skills">
   <div class="section-label">STACK</div>
   <h2 class="section-title">Technical Skills</h2>
+
+  <!-- ── Programming Languages (Circular) ── -->
+  <div class="circular-skills stagger">
+    <div class="circular-skill">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring-circle-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-ring-circle" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283" data-percent="95"></circle>
+        </svg>
+        <div class="progress-value">95%</div>
+      </div>
+      <span class="skill-name">Python</span>
+    </div>
+    <div class="circular-skill">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring-circle-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-ring-circle" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283" data-percent="95"></circle>
+        </svg>
+        <div class="progress-value">95%</div>
+      </div>
+      <span class="skill-name">JavaScript</span>
+    </div>
+    <div class="circular-skill">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring-circle-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-ring-circle" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283" data-percent="80"></circle>
+        </svg>
+        <div class="progress-value">80%</div>
+      </div>
+      <span class="skill-name">SQL</span>
+    </div>
+    <div class="circular-skill">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring-circle-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-ring-circle" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283" data-percent="95"></circle>
+        </svg>
+        <div class="progress-value">95%</div>
+      </div>
+      <span class="skill-name">HTML</span>
+    </div>
+    <div class="circular-skill">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring-circle-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-ring-circle" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283" data-percent="90"></circle>
+        </svg>
+        <div class="progress-value">90%</div>
+      </div>
+      <span class="skill-name">CSS</span>
+    </div>
+    <div class="circular-skill">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring-circle-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-ring-circle" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283" data-percent="70"></circle>
+        </svg>
+        <div class="progress-value">70%</div>
+      </div>
+      <span class="skill-name">C</span>
+    </div>
+    <div class="circular-skill">
+      <div class="progress-ring">
+        <svg>
+          <circle class="progress-ring-circle-bg" cx="50" cy="50" r="45"></circle>
+          <circle class="progress-ring-circle" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283" data-percent="70"></circle>
+        </svg>
+        <div class="progress-value">70%</div>
+      </div>
+      <span class="skill-name">C++</span>
+    </div>
+  </div>
+
   <div class="skills-grid stagger">
     <div class="skill-group">
       <div class="skill-group-header">
@@ -486,6 +561,22 @@ if (terminalOutput) {
   }, { threshold: 0.5 });
   terminalObserver.observe(terminalOutput);
 }
+
+// Circular Skills Animation
+const skillCircles = document.querySelectorAll('.progress-ring-circle');
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const circle = entry.target;
+      const percent = circle.getAttribute('data-percent');
+      const offset = 283 - (283 * percent) / 100;
+      circle.style.strokeDashoffset = offset;
+      skillObserver.unobserve(circle);
+    }
+  });
+}, { threshold: 0.5 });
+
+skillCircles.forEach(circle => skillObserver.observe(circle));
 </script>
 </body>
 </html>
