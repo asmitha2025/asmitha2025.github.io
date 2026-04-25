@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Asmitha M — AI Research Engineer · Portfolio</title>
-  <meta name="description" content="Asmitha M — AI Research Engineer, Full-Stack Developer, and Agentic Systems builder. Building production-grade intelligent systems including RL environments, edge inference pipelines, and agentic AI."/>
+  <title>Asmitha M — AI Engineer · Portfolio</title>
+  <meta name="description" content="Asmitha M — AI Engineer, Data Analyst, and Full Stack Developer. Building production-grade intelligent systems including RL environments, edge inference pipelines, and autonomous AI systems."/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -32,7 +32,7 @@
   <div>
       <h1 class="display-lg">Asmitha M</h1>
       <p class="hero-subtitle" style="margin-top:0.5rem; font-size:1rem; color:var(--primary); font-weight:500; font-family:'Space Grotesk',sans-serif; letter-spacing:0.03em;">
-        AI Research Engineer · Full-Stack Developer · Agentic Systems
+        AI Engineer · Data Analyst · Full Stack Developer
       </p>
       <p class="hero-subtitle">
         Building production-grade intelligent systems — RL environments, edge inference pipelines, and agentic AI. 4 deployed systems across 5 national and global hackathons.
@@ -71,8 +71,8 @@
     </div>
   </div>
   <div class="about-content fade-in">
-    <p>I'm an AI Engineer with a background in Data Science, focused on building scalable and practical intelligent systems. My work goes beyond models — I design complete solutions that include data processing, model development, backend systems, and user-facing applications.</p>
-    <p>I enjoy solving real-world problems by combining machine learning with system design. My projects focus on performance, usability, and deployment in real environments.</p>
+    <p>I am an AI Engineer focused on building production-grade intelligent systems. Bridging the gap between pure research and practical application, I design architectures that don't just train well, but deploy seamlessly. My work spans agentic workflows, deep reinforcement learning, and data analytics, backed by full-stack engineering expertise.</p>
+    <p>I believe true AI engineering happens beyond the model weights. It requires rigorous data engineering, robust backend infrastructure, and scalable system design. I don't just train models — I architect end-to-end autonomous systems that solve complex, real-world problems.</p>
   </div>
 </section>
 
@@ -83,7 +83,7 @@
       <div class="section-label">WORK</div>
       <h2 class="section-title">Projects</h2>
     </div>
-    <span class="font-mono" style="font-size:0.75rem; color:var(--neutral-500);">ROOT/RESEARCH/PROJECTS [4]</span>
+    <span class="font-mono" style="font-size:0.75rem; color:var(--neutral-500);">ROOT/RESEARCH/PROJECTS [5]</span>
   </div>
 
   <!-- ── CHRONO — Flagship ── -->
@@ -117,13 +117,12 @@
         </div>
 
         <div class="project-quote">
-          World's first system that detects pre-cancerous metabolic states from routine blood test history — years before imaging can. Three validated Nobel-adjacent signals unified for the first time.
+          World's first system detecting pre-cancerous metabolic states from routine blood test history — years before imaging can.
         </div>
         <ul class="project-bullets">
-          <li>3-tier agentic pipeline: Gemma 4 E4B vision OCR → biomarker normalisation → Gemma 4 26B ReAct agent performing longitudinal metabolic drift detection across 15+ biomarkers including HbA1c, LDH, CBC, and ferritin.</li>
-          <li>Achieved &lt;200ms on-device inference latency on consumer hardware with zero PHI cloud transmission — making the architecture HIPAA-compliant by design, not by policy.</li>
-          <li>Trident Signal: three independently validated cancer signals — Warburg Index Velocity, Biological Age Velocity (validated on 308,156 UK Biobank participants), and Immune Collapse Velocity — co-tracked for the first time as a unified metabolic fingerprint.</li>
-          <li>GCP Confidential VM enclave powers the Protocol-99 agentic triage workflow — Gemma 4 26B reasons through five tools, eliminates confounders, generates a clinical dossier, and routes to an oncologist with a one-tap confirm interface.</li>
+          <li>3-tier pipeline: Gemma OCR → normalisation → ReAct agent detecting longitudinal metabolic drift.</li>
+          <li>Zero PHI cloud transmission via &lt;200ms on-device inference, enforcing HIPAA-compliance by design.</li>
+          <li>Tracks Trident Signal: Warburg Index, Bio-Age, and Immune Collapse velocities as a unified fingerprint.</li>
         </ul>
         <div class="stack-pills">
           <span class="stack-pill">Gemma 4 E4B/26B</span>
@@ -132,8 +131,6 @@
           <span class="stack-pill">LangGraph</span>
           <span class="stack-pill">FastAPI</span>
           <span class="stack-pill">React Native</span>
-          <span class="stack-pill">GCP Confidential</span>
-          <span class="stack-pill">Unsloth</span>
         </div>
         <div class="project-links">
           <a href="https://github.com/asmitha2025/CHRONO-V1" class="project-link" target="_blank">GitHub ↗</a>
@@ -145,36 +142,57 @@
   <!-- ── Secondary Projects Grid ── -->
   <div class="projects-grid">
 
-    <!-- IncidentMind -->
+    <!-- SupportFloww -->
     <div class="project-card accent-left fade-in">
       <div class="badge-row">
-        <span class="badge-system" style="color:var(--tertiary);">INCIDENTMIND</span>
+        <span class="badge-system" style="color:var(--tertiary);">AETHERFLOW AI</span>
+      </div>
+      <h3 class="card-title">SupportFloww</h3>
+      <p class="card-subtitle">Confidence-Gated Support Intelligence</p>
+      <div class="project-badges" style="margin-top:0.5rem;">
+        <span class="project-badge-sm">DistilBERT</span>
+        <span class="project-badge-sm">MC Dropout</span>
+      </div>
+      <p class="card-tagline" style="margin-top:1rem;">Uncertainty-aware AI routing engine that detects ambiguous B2B SaaS tickets before misrouting.</p>
+      <ul class="project-bullets">
+        <li>3-tier decision gate (Route/Clarify/Escalate) using Monte Carlo Dropout entropy.</li>
+        <li>Reduced unnecessary escalations by 71% and SLA breaches by 39%.</li>
+      </ul>
+      <div class="stack-pills" style="margin-top:1rem;">
+        <span class="stack-pill">FastAPI</span>
+        <span class="stack-pill">Transformers</span>
+        <span class="stack-pill">XGBoost</span>
+        <span class="stack-pill">Python</span>
+      </div>
+      <div class="project-links" style="margin-top:auto; padding-top:1rem;">
+        <a href="https://github.com/asmitha2025/supportfloww" class="project-link" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- IncidentMind -->
+    <div class="project-card fade-in">
+      <div class="badge-row">
+        <span class="badge-system">INCIDENTMIND</span>
       </div>
       <h3 class="card-title">IncidentMind</h3>
       <p class="card-subtitle">Autonomous Production Incident Resolution</p>
-      <p class="card-subtitle">Meta PyTorch OpenEnv Hackathon 2026 · Bangalore Finale</p>
-      <div class="project-badges">
+      <div class="project-badges" style="margin-top:0.5rem;">
         <span class="project-badge-sm">Meta Finalist</span>
-        <span class="project-badge-sm">Live Demo</span>
         <span class="project-badge-sm">RL Research</span>
       </div>
-      <p class="card-tagline">73% P1 incident resolution within a 5-step horizon — 3.1× faster than median human L1 escalation latency. Shipped as a pip-installable PyPI package.</p>
+      <p class="card-tagline" style="margin-top:1rem;">Autonomous RL agent for resolving production infrastructure incidents 3.1× faster than human L1.</p>
       <ul class="project-bullets">
-        <li>OpenEnv and Gymnasium-compliant RL environment simulating 9 production incident archetypes across 3 difficulty tiers — covering memory leaks, cascading failures, DNS misconfigurations, TLS certificate expiry, schema migration race conditions, and feature flag disasters.</li>
-        <li>Confidence-gated observation space that dynamically reveals environment state, forcing agents to learn cost-of-information tradeoffs — paired with a dense reward function penalising blast-radius multiplied by clarification-budget overspend.</li>
-        <li>Benchmark suite spanning 500+ rollout episodes across 4 baselines — PPO, DQN, A2C, and Random — with fully deterministic graders requiring no LLM judge, ensuring reproducible scores.</li>
+        <li>Gymnasium environment simulating 9 incident archetypes with confidence-gated observations.</li>
+        <li>Achieved 73% P1 resolution rate across 500+ episodes without relying on LLM judges.</li>
       </ul>
-      <div class="stack-pills">
+      <div class="stack-pills" style="margin-top:1rem;">
         <span class="stack-pill">PyTorch</span>
         <span class="stack-pill">Gymnasium</span>
-        <span class="stack-pill">PPO/DQN/A2C</span>
-        <span class="stack-pill">FastAPI</span>
-        <span class="stack-pill">Docker</span>
+        <span class="stack-pill">PPO/DQN</span>
         <span class="stack-pill">Llama-3.3-70B</span>
       </div>
-      <div class="project-links">
+      <div class="project-links" style="margin-top:auto; padding-top:1rem;">
         <a href="https://github.com/asmitha2025/Incidentmind-v1" class="project-link" target="_blank">GitHub ↗</a>
-        <a href="#" class="project-link">Live Demo on HuggingFace ↗</a>
       </div>
     </div>
 
@@ -184,49 +202,41 @@
         <span class="badge-system">CASE_STUDY: OPTI-FAB</span>
       </div>
       <h3 class="card-title">OPTI-FAB</h3>
-      <p class="card-subtitle">IESA DeepTech Hackathon 2026 · Semiconductor Edge AI</p>
-      <p class="card-tagline">63.9% latency reduction from 8.3ms to 3.0ms, measured on real RTX 4050 hardware — not simulated. Decisions made at 50–68% frame completion while the wafer is still under the scanner.</p>
+      <p class="card-subtitle">Semiconductor Edge AI</p>
+      <p class="card-tagline" style="margin-top:1rem;">Stream-aware edge inference pipeline for real-time 300mm wafer defect inspection.</p>
       <ul class="project-bullets">
-        <li>Stream-aware production inference pipeline for 300mm wafer inspection: MobileNetV2 backbone, TensorRT FP16 quantisation, and a confidence-gated early-exit layer — achieving 1,262 frames per second at 0.79ms inference latency, 3.34× faster than CPU baseline.</li>
-        <li>90% classification accuracy across 8 defect classes with &lt;1% accuracy degradation versus FP32, demonstrating precision-efficiency co-optimisation. Benchmarked on NVIDIA Jetson-class edge hardware for direct fab-floor deployment.</li>
+        <li>TensorRT FP16 quantised MobileNetV2 achieving 1,262 FPS at 0.79ms latency.</li>
+        <li>63.9% latency reduction with &lt;1% accuracy drop across 8 defect classes.</li>
       </ul>
-      <div class="stack-pills">
-        <span class="stack-pill">TensorRT FP16</span>
+      <div class="stack-pills" style="margin-top:1rem;">
+        <span class="stack-pill">TensorRT</span>
         <span class="stack-pill">MobileNetV2</span>
         <span class="stack-pill">CUDA</span>
-        <span class="stack-pill">ONNX</span>
-        <span class="stack-pill">Python</span>
       </div>
-      <div class="project-links">
+      <div class="project-links" style="margin-top:auto; padding-top:1rem;">
         <a href="https://github.com/asmitha2025/Opti-fab-latency-" class="project-link" target="_blank">GitHub ↗</a>
       </div>
     </div>
 
     <!-- Crop Yield -->
-    <div class="project-card fade-in" style="grid-column: 1 / -1;">
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-        <div>
-          <div class="badge-row"><span class="badge-system">CASE_STUDY: CROP_YIELD</span></div>
-          <h3 class="card-title" style="margin-top:0.5rem;">Crop Yield Prediction</h3>
-          <p class="card-subtitle">End-to-End ML Pipeline · XGBoost + SHAP Explainability</p>
-          <p class="card-tagline" style="margin-top:1rem;">End-to-end ML pipeline on an 18,000-sample climate and soil NPK dataset. XGBoost achieving R²=0.98 with SHAP explainability and an interactive Streamlit dashboard for real-time forecasting.</p>
-        </div>
-        <div>
-          <ul class="project-bullets">
-            <li>GridSearchCV-optimised XGBoost model generating crop-specific yield forecasts across 6 varieties and 3 agroclimatic zones, with SHAP waterfall charts explaining individual predictions — answering why the model made each decision, not just what it predicted.</li>
-          </ul>
-          <div class="stack-pills" style="margin-top:1rem;">
-            <span class="stack-pill">XGBoost</span>
-            <span class="stack-pill">Scikit-learn</span>
-            <span class="stack-pill">SHAP</span>
-            <span class="stack-pill">Streamlit</span>
-            <span class="stack-pill">Pandas</span>
-            <span class="stack-pill">NumPy</span>
-          </div>
-          <div class="project-links" style="margin-top:1rem;">
-            <a href="https://github.com/asmitha2025/crop-yield-prediction" class="project-link" target="_blank">GitHub ↗</a>
-          </div>
-        </div>
+    <div class="project-card fade-in">
+      <div class="badge-row">
+        <span class="badge-system">CASE_STUDY: CROP_YIELD</span>
+      </div>
+      <h3 class="card-title">Crop Yield</h3>
+      <p class="card-subtitle">XGBoost + SHAP Explainability</p>
+      <p class="card-tagline" style="margin-top:1rem;">End-to-end predictive pipeline on 18,000+ climate and soil records for agricultural forecasting.</p>
+      <ul class="project-bullets">
+        <li>Optimised XGBoost achieving R²=0.98 across 6 crop varieties.</li>
+        <li>SHAP-powered dashboard for real-time, explainable yield predictions.</li>
+      </ul>
+      <div class="stack-pills" style="margin-top:1rem;">
+        <span class="stack-pill">XGBoost</span>
+        <span class="stack-pill">SHAP</span>
+        <span class="stack-pill">Streamlit</span>
+      </div>
+      <div class="project-links" style="margin-top:auto; padding-top:1rem;">
+        <a href="https://github.com/asmitha2025/crop-yield-prediction" class="project-link" target="_blank">GitHub ↗</a>
       </div>
     </div>
   </div>
@@ -436,6 +446,11 @@
       <div class="edu-meta">2023 – 2026 · Bharathidasan University · NAAC A++</div>
     </div>
     <div class="edu-card fade-in">
+      <div class="edu-institution">Udacity · AWS</div>
+      <div class="edu-degree">Agentic Engineer · Agentic Workflows</div>
+      <div class="edu-meta">2026 – Present · AI Practitioner Challenge</div>
+    </div>
+    <div class="edu-card fade-in">
       <div class="edu-institution">NxtWave</div>
       <div class="edu-degree">Full Stack Development</div>
       <div class="edu-meta">2024 – Present · Industry Certification</div>
@@ -484,7 +499,7 @@
 
 <!-- ═══════════ FOOTER ═══════════ -->
 <footer class="footer">
-  <div class="footer-text">Asmitha M · AI Research Engineer · Built with purpose, not templates.</div>
+  <div class="footer-text">Asmitha M · AI Engineer · Data Analyst · Full Stack Developer</div>
   <div class="footer-links">
     <a href="https://github.com/asmitha2025" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/asmitha-m-1695b331b/" target="_blank">LinkedIn</a>

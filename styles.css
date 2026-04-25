@@ -221,7 +221,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 
 /* ── About Me ── */
-.about { padding: 5rem 0; }
+.about { padding: 3rem 0; }
 .about-content {
   max-width: 720px;
   margin-top: 2rem;
@@ -235,7 +235,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .about-content p:last-child { margin-bottom: 0; }
 
 /* ── Achievements ── */
-.achievements { padding: 5rem 0; }
+.achievements { padding: 3rem 0; }
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -273,7 +273,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 
 /* ── Projects ── */
-.projects { padding: 4rem 0; }
+.projects { padding: 2rem 0 3rem 0; }
 .section-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 3rem; }
 .section-header .counter { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--neutral-500); }
 
@@ -365,7 +365,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .project-card .card-tagline { font-size: 0.8rem; color: var(--on-surface-variant); line-height: 1.7; }
 
 /* ── Hackathons ── */
-.hackathons { padding: 5rem 0; background: rgba(14, 14, 19, 0.5); }
+.hackathons { padding: 3rem 0; background: rgba(14, 14, 19, 0.5); }
 .hack-grid { display: grid; grid-template-columns: 300px 1fr; gap: 3rem; }
 @media (max-width: 900px) { .hack-grid { grid-template-columns: 1fr; } }
 .hack-intro .section-title { line-height: 1; }
@@ -395,7 +395,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .timeline-desc { font-size: 0.82rem; color: var(--on-surface-variant); margin-top: 0.75rem; line-height: 1.7; max-width: 640px; }
 
 /* ── Skills ── */
-.skills { padding: 5rem 0; }
+.skills { padding: 3rem 0; }
 .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 2rem; }
 @media (max-width: 900px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .skills-grid { grid-template-columns: 1fr; } }
@@ -474,7 +474,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 
 /* ── Blog ── */
-.blog { padding: 5rem 0; }
+.blog { padding: 3rem 0; }
 .blog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; }
 @media (max-width: 768px) { .blog-grid { grid-template-columns: 1fr; } }
 .blog-card {
@@ -492,7 +492,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .blog-meta { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--neutral-500); }
 
 /* ── Experience ── */
-.experience { padding: 5rem 0; }
+.experience { padding: 3rem 0; }
 .exp-card { background: var(--surface-low); padding: 2.5rem; margin-top: 2rem; }
 .exp-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
 .exp-company { font-size: 1.3rem; font-weight: 700; color: #fff; }
@@ -503,7 +503,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 
 /* ── Education ── */
-.education { padding: 5rem 0; }
+.education { padding: 3rem 0; }
 .edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; }
 @media (max-width: 768px) { .edu-grid { grid-template-columns: 1fr; } }
 .edu-card { background: var(--surface-low); padding: 2rem; }
@@ -516,7 +516,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 
 /* ── Contact ── */
-.contact { padding: 5rem 0; }
+.contact { padding: 3rem 0; }
 .terminal {
   background: #000; border: 1px solid rgba(255,255,255,0.04);
   font-family: 'JetBrains Mono', monospace; overflow: hidden;
